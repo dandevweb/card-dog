@@ -49,15 +49,17 @@ $(function () {
     });
 
     $(window).on("load", function () {
-        breed.val(localStorage.breed)
-        name.val(localStorage.name)
-        color.val(localStorage.color)
-        font.val(localStorage.font)
-        image.attr("src", localStorage.img)
-        text.text(localStorage.name)
-        text.css("color", localStorage.color)
-        text.css("fontFamily", localStorage.font)
-        date.text("Salvo em: " + datePtBr(localStorage.date))
+        if (localStorage.breed) {
+            breed.val(localStorage.breed)
+            name.val(localStorage.name)
+            color.val(localStorage.color)
+            font.val(localStorage.font)
+            image.attr("src", localStorage.img)
+            text.text(localStorage.name)
+            text.css("color", localStorage.color)
+            text.css("fontFamily", localStorage.font)
+            date.text("Salvo em: " + datePtBr(localStorage.date))
+        }
 
     });
 
