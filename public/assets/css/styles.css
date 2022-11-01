@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#image {
+    width: 100%;
+    text-align: center;
+    border: 0;
+}
+
+#image img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: auto;
+}
+
+#image h4 {
+    font-size: 35px;
+}

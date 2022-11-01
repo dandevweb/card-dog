@@ -1,0 +1,21 @@
+{
+  "name": "teste/cachorros",
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Boot/Config.php",
+      "app/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-pdo": "^7.4",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/router": "1.0.*"
+  }
+}
